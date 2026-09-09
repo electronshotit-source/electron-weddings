@@ -111,9 +111,9 @@ document.addEventListener('DOMContentLoaded', () => {
       `Name: ${fname} ${lname}\nEmail: ${email}\nPhone: ${phone}\nWedding date: ${wdate || 'TBD'}\nVenue: ${venue || 'TBD'}\n\n${message}`
     );
     status.textContent = 'Opening your email client to send this inquiry…';
-    window.location.href = `mailto:hello@electronweddings.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:bookelectronweddings@gmail.com?subject=${subject}&body=${body}`;
     setTimeout(() => {
-      status.textContent = 'Thank you! If your email app did not open, reach us directly at hello@electronweddings.com.';
+      status.textContent = 'Thank you! If your email app did not open, reach us directly at bookelectronweddings@gmail.com.';
       form.reset();
     }, 800);
   });

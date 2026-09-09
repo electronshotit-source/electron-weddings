@@ -84,7 +84,7 @@ the same `sips` command in a loop rather than one at a time.
 
 - Bio, stats, and pricing are placeholder text in `index.html` — search for
   "Hi, I'm behind the lens" and the `.price-card` blocks to edit.
-- Contact email defaults to `hello@electronweddings.com` — update it in
+- Contact email defaults to `bookelectronweddings@gmail.com` — update it in
   both `index.html` (`.contact-alt` link) and `js/main.js` (the `mailto:`
   line) if that's not your real address.
 
