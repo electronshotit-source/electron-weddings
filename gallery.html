@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Full Gallery — Electron Weddings</title>
+<meta name="description" content="The full Electron Weddings portfolio — every wedding, elopement, and love story we've had the honor of documenting." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◈</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=1788939989" />
+</head>
+<body>
+
+<!-- ============ PRELOADER ============ -->
+<div id="preloader"><span>ELECTRON WEDDINGS</span></div>
+
+<!-- ============ NAV ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="nav-wrap">
+    <a href="index.html" class="logo">ELECTRON</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#portfolio">Portfolio</a>
+      <a href="gallery.html" class="current">Gallery</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <a class="nav-social" href="https://www.instagram.com/electronweddings" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ GALLERY HERO ============ -->
+<section class="gallery-hero">
+  <p class="section-eyebrow center">Every Frame</p>
+  <h1 class="gallery-hero-title">The Full Gallery</h1>
+  <p class="section-sub center">Every wedding, elopement, and quiet in-between moment we've had the honor of documenting — <span id="galleryCount">122</span> photographs and counting.</p>
+</section>
+
+<!-- ============ FULL GALLERY ============ -->
+<section class="full-gallery">
+  <div class="gallery" id="fullGallery"></div>
+  <button class="btn-outline-dark load-more-btn" id="loadMoreBtn">Load More</button>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <a href="index.html" class="logo">ELECTRON</a>
+    <nav class="footer-links">
+      <a href="index.html#about">About</a>
+      <a href="index.html#portfolio">Portfolio</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <div class="footer-social">
+      <a href="https://www.instagram.com/electronweddings" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+      </a>
+    </div>
+  </div>
+  <p class="footer-copy">© <span id="year"></span> Electron Weddings. All rights reserved.</p>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">×</button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous photo">‹</button>
+  <img id="lightboxImg" src="" alt="" />
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next photo">›</button>
+  <p class="lightbox-count" id="lightboxCount"></p>
+</div>
+
+<script src="js/gallery-data.js?v=1788939989"></script>
+<script src="js/main.js?v=1788939989"></script>
+<script src="js/gallery.js?v=1788939989"></script>
+</body>
+</html>

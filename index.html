@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Electron Weddings — Wedding Photography</title>
+<meta name="description" content="Electron Weddings — timeless, documentary-style wedding photography, available worldwide. Follow @electronweddings." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◈</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=1788939989" />
+</head>
+<body>
+
+<!-- ============ PRELOADER ============ -->
+<div id="preloader"><span>ELECTRON WEDDINGS</span></div>
+
+<!-- ============ NAV ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="nav-wrap">
+    <a href="#home" class="logo">ELECTRON</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <a class="nav-social" href="https://www.instagram.com/electronweddings" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero-media">
+    <img src="images/web/61389EKH.jpg" alt="Bride and groom silhouette at sunset" />
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Wedding &amp; Elopement Photography</p>
+    <h1>Electron<br>Weddings</h1>
+    <p class="hero-sub">Quiet moments, real emotion, timeless frames.</p>
+    <div class="hero-actions">
+      <a href="#portfolio" class="text-link light">View Portfolio <i>→</i></a>
+      <a href="#contact" class="text-link light">Check Availability <i>→</i></a>
+    </div>
+  </div>
+  <a href="#stands-for" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+</section>
+
+<!-- ============ ENTRY GATE ============ -->
+<section class="entry-gate" id="entryGate">
+  <div class="gate-inner">
+    <button class="camera-gate-btn" id="cameraGateBtn" aria-label="Click the shutter to enter the site">
+      <span class="gate-glow"></span>
+      <span class="gate-ring-pulse"></span>
+      <svg class="camera-icon" viewBox="0 0 240 210" width="210" height="184" aria-hidden="true">
+        <!-- strap lugs -->
+        <circle class="cam-lug" cx="26" cy="80" r="5" />
+        <circle class="cam-lug" cx="214" cy="80" r="5" />
+        <!-- viewfinder / pentaprism bump -->
+        <path class="cam-viewfinder" d="M74,68 L74,40 Q74,32 82,32 L108,32 Q116,32 116,40 L116,68 Z" />
+        <!-- shutter button -->
+        <rect class="cam-shutter-mount" x="176" y="50" width="28" height="22" rx="5" />
+        <circle class="cam-shutter-btn" cx="190" cy="50" r="8" />
+        <!-- camera body -->
+        <rect class="cam-chassis" x="20" y="68" width="200" height="122" rx="18" />
+        <!-- lens -->
+        <circle class="cam-lens-ring" cx="120" cy="129" r="54" />
+        <circle class="cam-lens" cx="120" cy="129" r="44" />
+        <g class="cam-aperture" id="cameraAperture">
+          <g transform="translate(120,129) rotate(0)"><g class="blade-slide"><path class="blade-path" d="M3,-5 L40,-12 L40,12 L3,5 Z"/></g></g>
+          <g transform="translate(120,129) rotate(45)"><g class="blade-slide"><path class="blade-path" d="M3,-5 L40,-12 L40,12 L3,5 Z"/></g></g>
+          <g transform="translate(120,129) rotate(90)"><g class="blade-slide"><path class="blade-path" d="M3,-5 L40,-12 L40,12 L3,5 Z"/></g></g>
+          <g transform="translate(120,129) rotate(135)"><g class="blade-slide"><path class="blade-path" d="M3,-5 L40,-12 L40,12 L3,5 Z"/></g></g>
+          <g transform="translate(120,129) rotate(180)"><g class="blade-slide"><path class="blade-path" d="M3,-5 L40,-12 L40,12 L3,5 Z"/></g></g>
+          <g transform="translate(120,129) rotate(225)"><g class="blade-slide"><path class="blade-path" d="M3,-5 L40,-12 L40,12 L3,5 Z"/></g></g>
+          <g transform="translate(120,129) rotate(270)"><g class="blade-slide"><path class="blade-path" d="M3,-5 L40,-12 L40,12 L3,5 Z"/></g></g>
+          <g transform="translate(120,129) rotate(315)"><g class="blade-slide"><path class="blade-path" d="M3,-5 L40,-12 L40,12 L3,5 Z"/></g></g>
+        </g>
+        <circle class="cam-lens-dot" cx="120" cy="129" r="4" />
+        <!-- lens highlight -->
+        <path class="cam-lens-glint" d="M92,103 A40,40 0 0 1 118,88" />
+      </svg>
+    </button>
+    <p class="gate-label">Press the Shutter</p>
+    <p class="gate-sub">to step inside our studio</p>
+  </div>
+</section>
+<span class="gate-flash" id="gateFlash"></span>
+
+<div id="siteContent">
+<!-- ============ MARQUEE STRIP ============ -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span>Documentary Style</span><span>◈</span>
+    <span>Destination Weddings</span><span>◈</span>
+    <span>Film &amp; Digital</span><span>◈</span>
+    <span>Intimate Elopements</span><span>◈</span>
+    <span>Documentary Style</span><span>◈</span>
+    <span>Destination Weddings</span><span>◈</span>
+    <span>Film &amp; Digital</span><span>◈</span>
+    <span>Intimate Elopements</span><span>◈</span>
+  </div>
+</div>
+
+<!-- ============ STANDS FOR ============ -->
+<section class="stands-for" id="stands-for">
+  <p class="section-eyebrow center">Electron Weddings Stands For</p>
+  <h2 class="standsfor-title">Every Layer,<br><em>Captured &amp; Timeless.</em></h2>
+</section>
+
+<!-- ============ ABOUT / BEHIND THE LENS ============ -->
+<section class="about" id="about">
+  <div class="about-image">
+    <img src="images/web/61330EKH.jpg" alt="Candid, laughing moment between a couple" />
+  </div>
+  <div class="about-content">
+    <p class="section-eyebrow">Behind The Lens</p>
+    <h2>Hi, I'm behind the lens at Electron Weddings.</h2>
+    <p>I photograph weddings the way they actually feel — a little chaotic, deeply tender, and over far too fast. My approach is documentary first: I stay close, stay quiet, and let the day unfold in front of the camera rather than direct it.</p>
+    <p>Whether it's an intimate elopement in the mountains or a three-day celebration surrounded by everyone you love, my goal is the same — to hand you photographs that still make you cry happy tears twenty years from now.</p>
+    <div class="about-stats">
+      <div><strong>120+</strong><span>Weddings Shot</span></div>
+      <div><strong>15</strong><span>Countries</span></div>
+      <div><strong>5.0★</strong><span>Average Rating</span></div>
+    </div>
+    <a href="#contact" class="text-link">Learn More <i>→</i></a>
+  </div>
+</section>
+
+<!-- ============ FEATURED SPOTLIGHT ============ -->
+<section class="spotlight">
+  <img src="images/web/037A3389-Edit.jpg" alt="Traditional wedding ceremony portrait" />
+  <div class="spotlight-caption">
+    <p class="section-eyebrow light">Featured Wedding</p>
+    <h3>A Traditional Ceremony, Reimagined</h3>
+    <a href="#portfolio" class="text-link light">Read More <i>→</i></a>
+  </div>
+</section>
+
+<!-- ============ PORTFOLIO ============ -->
+<section class="portfolio" id="portfolio">
+  <p class="section-eyebrow center">Recent Work</p>
+  <h2 class="section-title center">Portfolio</h2>
+  <p class="section-sub center">A small selection of real weddings and elopements — browse the full gallery below.</p>
+
+  <div class="filter-bar" id="filterBar">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="ceremony">Ceremony</button>
+    <button class="filter-btn" data-filter="portraits">Portraits</button>
+    <button class="filter-btn" data-filter="details">Details</button>
+    <button class="filter-btn" data-filter="reception">Reception</button>
+  </div>
+
+  <div class="gallery" id="gallery">
+    <figure class="gallery-item" data-cat="ceremony">
+      <img src="images/web/037A8402-Edit.jpg" alt="Wedding ceremony kiss in the pews" loading="lazy" />
+      <figcaption>View Fullsize</figcaption>
+    </figure>
+    <figure class="gallery-item" data-cat="portraits">
+      <img src="images/web/000A0826-Edit.jpg" alt="Bride portrait in ballgown" loading="lazy" />
+      <figcaption>View Fullsize</figcaption>
+    </figure>
+    <figure class="gallery-item" data-cat="details">
+      <img src="images/web/037A4100-Edit.jpg" alt="Detail of hands with coral beads" loading="lazy" />
+      <figcaption>View Fullsize</figcaption>
+    </figure>
+    <figure class="gallery-item" data-cat="reception">
+      <img src="images/web/000A9603-Edit.jpg" alt="Couple toasting champagne at sunset" loading="lazy" />
+      <figcaption>View Fullsize</figcaption>
+    </figure>
+    <figure class="gallery-item" data-cat="portraits">
+      <img src="images/web/037A7956-Edit.jpg" alt="Couple in traditional attire, forehead to forehead" loading="lazy" />
+      <figcaption>View Fullsize</figcaption>
+    </figure>
+    <figure class="gallery-item" data-cat="ceremony">
+      <img src="images/web/037A8408-Edit.jpg" alt="Wedding aisle walk" loading="lazy" />
+      <figcaption>View Fullsize</figcaption>
+    </figure>
+    <figure class="gallery-item" data-cat="details">
+      <img src="images/web/037A8358-Edit.jpg" alt="Detail of hands, black and white" loading="lazy" />
+      <figcaption>View Fullsize</figcaption>
+    </figure>
+    <figure class="gallery-item" data-cat="reception">
+      <img src="images/web/037A3514-Edit-Edit.jpg" alt="Couple's first dance on the reception floor" loading="lazy" />
+      <figcaption>View Fullsize</figcaption>
+    </figure>
+    <figure class="gallery-item" data-cat="portraits">
+      <img src="images/web/037A3704-Edit.jpg" alt="Bride portrait with veil" loading="lazy" />
+      <figcaption>View Fullsize</figcaption>
+    </figure>
+    <figure class="gallery-item" data-cat="ceremony">
+      <img src="images/web/000A9685-Edit.jpg" alt="Traditional wedding ceremony portrait" loading="lazy" />
+      <figcaption>View Fullsize</figcaption>
+    </figure>
+    <figure class="gallery-item" data-cat="portraits">
+      <img src="images/web/000A9114-Edit.jpg" alt="Bride in traditional gown outdoors" loading="lazy" />
+      <figcaption>View Fullsize</figcaption>
+    </figure>
+    <figure class="gallery-item" data-cat="reception">
+      <img src="images/web/037A9182-Edit.jpg" alt="Couple dancing at evening reception" loading="lazy" />
+      <figcaption>View Fullsize</figcaption>
+    </figure>
+    <figure class="gallery-item" data-cat="details">
+      <img src="images/web/000A9679-Edit.jpg" alt="Beauty detail portrait with jewelry" loading="lazy" />
+      <figcaption>View Fullsize</figcaption>
+    </figure>
+    <figure class="gallery-item" data-cat="ceremony">
+      <img src="images/web/037A3334-Edit.jpg" alt="Traditional ceremony portrait outdoors" loading="lazy" />
+      <figcaption>View Fullsize</figcaption>
+    </figure>
+    <figure class="gallery-item" data-cat="portraits">
+      <img src="images/web/037A3741-Edit.jpg" alt="Bride portrait against wooden backdrop" loading="lazy" />
+      <figcaption>View Fullsize</figcaption>
+    </figure>
+    <figure class="gallery-item" data-cat="reception">
+      <img src="images/web/037A9657-Edit.jpg" alt="Overhead shot of reception lounge" loading="lazy" />
+      <figcaption>View Fullsize</figcaption>
+    </figure>
+  </div>
+
+  <a href="gallery.html" class="text-link center-link">View Full Gallery <i>→</i></a>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="services" id="services">
+  <p class="section-eyebrow center">Investment</p>
+  <h2 class="section-title center">Services &amp; Packages</h2>
+  <p class="section-sub center">Every wedding is different — packages are a starting point and can be tailored to your day.</p>
+
+  <div class="pricing-grid">
+    <div class="price-card">
+      <h3>Elopement</h3>
+      <p class="price">from $1,800</p>
+      <ul>
+        <li>Up to 4 hours coverage</li>
+        <li>One photographer</li>
+        <li>200+ edited images</li>
+        <li>Online gallery, print rights</li>
+        <li>Travel within 50 miles included</li>
+      </ul>
+      <a href="#contact" class="text-link">Inquire <i>→</i></a>
+    </div>
+    <div class="price-card featured">
+      <p class="badge">Most Booked</p>
+      <h3>Full Day</h3>
+      <p class="price">from $3,600</p>
+      <ul>
+        <li>Up to 10 hours coverage</li>
+        <li>Two photographers</li>
+        <li>600+ edited images</li>
+        <li>Online gallery, print rights</li>
+        <li>Engagement session included</li>
+        <li>Custom wedding album</li>
+      </ul>
+      <a href="#contact" class="text-link">Inquire <i>→</i></a>
+    </div>
+    <div class="price-card">
+      <h3>Destination</h3>
+      <p class="price">from $5,200</p>
+      <ul>
+        <li>Multi-day coverage</li>
+        <li>Two photographers</li>
+        <li>800+ edited images</li>
+        <li>Travel &amp; accommodation included</li>
+        <li>Rehearsal dinner coverage</li>
+        <li>Custom wedding album</li>
+      </ul>
+      <a href="#contact" class="text-link">Inquire <i>→</i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="testimonials" id="testimonials">
+  <p class="section-eyebrow center">Kind Words</p>
+
+  <div class="testimonial-track" id="testimonialTrack">
+    <blockquote class="testimonial active">
+      <p>"We handed over our whole day and didn't think twice. The photos feel exactly like the wedding felt — warm, real, us."</p>
+      <cite>Maya &amp; Theo</cite>
+    </blockquote>
+    <blockquote class="testimonial">
+      <p>"Unbelievably unobtrusive during the ceremony and somehow captured every single moment we cared about. Worth every cent."</p>
+      <cite>Priya &amp; Sam</cite>
+    </blockquote>
+    <blockquote class="testimonial">
+      <p>"Our families still talk about how comfortable they felt in front of the camera. That's a gift, not a skill."</p>
+      <cite>Aiko &amp; Noah</cite>
+    </blockquote>
+    <blockquote class="testimonial">
+      <p>"We eloped with two witnesses and the photos still make it look like the biggest day of our lives — because it was."</p>
+      <cite>Jordan &amp; Lee</cite>
+    </blockquote>
+  </div>
+  <div class="testimonial-dots" id="testimonialDots"></div>
+</section>
+
+<!-- ============ INSTAGRAM ============ -->
+<section class="instagram" id="instagram">
+  <p class="section-eyebrow center">Instagram</p>
+  <p class="section-sub center">@electronweddings — behind-the-scenes, recent weddings, and the odd bad joke about wedding-day weather.</p>
+
+  <div class="insta-grid">
+    <a class="insta-tile" href="https://www.instagram.com/electronweddings" target="_blank" rel="noopener"><img src="images/web/000A2517-Edit.jpg" alt="Instagram post" loading="lazy"><span class="insta-icon">♡</span></a>
+    <a class="insta-tile" href="https://www.instagram.com/electronweddings" target="_blank" rel="noopener"><img src="images/web/000A2862.jpg" alt="Instagram post" loading="lazy"><span class="insta-icon">♡</span></a>
+    <a class="insta-tile" href="https://www.instagram.com/electronweddings" target="_blank" rel="noopener"><img src="images/web/037A3866-Edit.jpg" alt="Instagram post" loading="lazy"><span class="insta-icon">♡</span></a>
+    <a class="insta-tile" href="https://www.instagram.com/electronweddings" target="_blank" rel="noopener"><img src="images/web/037A9193.jpg" alt="Instagram post" loading="lazy"><span class="insta-icon">♡</span></a>
+    <a class="insta-tile" href="https://www.instagram.com/electronweddings" target="_blank" rel="noopener"><img src="images/web/IMG_0626.jpg" alt="Instagram post" loading="lazy"><span class="insta-icon">♡</span></a>
+    <a class="insta-tile" href="https://www.instagram.com/electronweddings" target="_blank" rel="noopener"><img src="images/web/037A1381.jpg" alt="Instagram post" loading="lazy"><span class="insta-icon">♡</span></a>
+  </div>
+  <a href="https://www.instagram.com/electronweddings" target="_blank" rel="noopener" class="text-link center-link">Follow @electronweddings <i>→</i></a>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <p class="section-eyebrow center">Contact Us</p>
+    <h2 class="section-title center">Let's Document Your Day</h2>
+    <p class="section-sub center">Tell me a little about your wedding and I'll get back to you within 48 hours.</p>
+
+    <form class="contact-form" id="contactForm">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="fname">First Name <em>(required)</em></label>
+          <input type="text" id="fname" name="fname" required />
+        </div>
+        <div class="form-group">
+          <label for="lname">Last Name <em>(required)</em></label>
+          <input type="text" id="lname" name="lname" required />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="email">Email <em>(required)</em></label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone <em>(required)</em></label>
+          <input type="tel" id="phone" name="phone" required />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="wdate">Wedding Date</label>
+          <input type="date" id="wdate" name="wdate" />
+        </div>
+        <div class="form-group">
+          <label for="venue">Wedding Venue, City, State</label>
+          <input type="text" id="venue" name="venue" placeholder="e.g. Napa Valley, CA" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="message">Leave A Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn-outline-dark">Submit</button>
+      <p class="form-status" id="formStatus"></p>
+    </form>
+
+    <div class="contact-alt">
+      <span>or reach out directly —</span>
+      <a href="mailto:hello@electronweddings.com">hello@electronweddings.com</a>
+      <span>/</span>
+      <a href="https://www.instagram.com/electronweddings" target="_blank" rel="noopener">@electronweddings</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <a href="#home" class="logo">ELECTRON</a>
+    <nav class="footer-links">
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="footer-social">
+      <a href="https://www.instagram.com/electronweddings" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+      </a>
+    </div>
+  </div>
+  <p class="footer-copy">© <span id="year"></span> Electron Weddings. All rights reserved.</p>
+</footer>
+</div><!-- /#siteContent -->
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">×</button>
+  <img id="lightboxImg" src="" alt="" />
+</div>
+
+<script src="js/main.js?v=1788939989"></script>
+<script src="js/gate.js?v=1788939989"></script>
+</body>
+</html>
